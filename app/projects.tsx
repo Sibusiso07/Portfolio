@@ -3,7 +3,6 @@
 
 import NoteKeeperProject from "./Projects/note-keeper";
 import QuizProject from "./Projects/quiz-game";
-import WeatherProject from "./Projects/weather-app";
 import WineListProject from "./Projects/wine-list-app";
 
 const Projects = () => {
@@ -14,7 +13,6 @@ const Projects = () => {
         <div className="flex flex-wrap space-x-20">
           <NoteKeeperProject />
           <QuizProject />
-          <WeatherProject />
           <WineListProject />
         </div>
       </div>
