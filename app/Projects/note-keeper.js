@@ -6,6 +6,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
+  DialogFooter,
 } from '@/components/ui/dialog';
 import {
   Carousel,
@@ -27,7 +28,7 @@ const imageFiles = [
 
 const noteKeeperComponent = () => {
   return (
-    <Dialog className="h-screen">
+    <Dialog className="h-screen my-16 mx-80">
       <DialogTrigger>
         <Image 
           src={`/projects/note-keeper/Note-Keeper.png`}
@@ -36,10 +37,10 @@ const noteKeeperComponent = () => {
           alt='Note Keeper Image'
         />
       </DialogTrigger>
-      <DialogContent>
+      <DialogContent className='w-5/6'>
         <DialogHeader>
           <DialogTitle>Note Keeper</DialogTitle>
-          <Carousel className="w-full">
+          <Carousel className="items-center justify-center">
             <CarouselContent>
               {imageFiles.map((imageName, index) => (
                 <CarouselItem key={index}>
@@ -57,26 +58,33 @@ const noteKeeperComponent = () => {
             <CarouselNext />
           </Carousel>
           <DialogDescription>
-            <div className='flex'>
+            <div>
               <div>
                 <h6>Description:</h6>
-                <p>
+                <p><br />
                   This is a software application designed for the purpose of creating, storing, and managing notes.
                   The application likely provides a user interface through which users can interact with the note-taking functionality.
-                </p>
+                </p><br />
               </div>
               <div className="ml-8 p-20">
-                <h6>Stack:</h6>
-                <p>React</p>
-                <p>Postgres</p>
-                <p>Express</p>
-                <p>Cors</p>
-                <p>CSS</p>
-                <p>HTML</p>
+                <h6>Stack:</h6><br />
+                <ul>
+                  <li>React</li>
+                  <li>Postgres</li>
+                  <li>Express</li>
+                  <li>Cors</li>
+                  <li>CSS</li>
+                  <li>HTML</li>
+                </ul>
               </div>
             </div>
           </DialogDescription>
-          <a href='https://github.com/Sibusiso07/Note-Keeper'><button>Github</button></a>
+          <DialogFooter className='bg-blue-500 text-black border-black font-bold py-2 px-4 rounded'>
+            <a href='https://github.com/Sibusiso07/Note-Keeper'>
+              <button>Github</button>
+            </a>    
+          </DialogFooter>
+          
         </DialogHeader>
       </DialogContent>
     </Dialog>

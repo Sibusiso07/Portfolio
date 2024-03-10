@@ -6,6 +6,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
+  DialogFooter,
 } from '@/components/ui/dialog';
 import {
   Carousel,
@@ -17,12 +18,13 @@ import {
 import Image from "next/image";
 
 const imageFiles = [
-  "Code1.png",
-  "Code2.png",
-  "App1.png",
-  "Code3.png",
-  "App2.png",
-  "App3.png",
+  "login.jpg",
+  "Code1.jpg",
+  "dashboard.jpg",
+  "AddWine.jpg",
+  "Code2.jpg",
+  "EditWine.jpg",
+  "ViewWine.jpg",
 ];
 
 const wineListComponent = () => {
@@ -43,12 +45,12 @@ const wineListComponent = () => {
             <CarouselContent>
               {imageFiles.map((imageName, index) => (
                 <CarouselItem key={index}>
-                  {/* <Image
-                    src={`/projects/note-keeper/${imageName}`}
+                  <Image
+                    src={`/projects/wine-list-app/${imageName}`}
                     width={300}
                     height={300}
                     alt="Code"
-                  /> */}
+                  />
                 </CarouselItem>
               ))}
             </CarouselContent>
@@ -56,27 +58,32 @@ const wineListComponent = () => {
             <CarouselNext />
           </Carousel>
           <DialogDescription>
-            <div className='flex'>
-                <h6>Still Coming</h6>
+            <div >
               <div>
-                {/* <h6>Description:</h6>
+                <h6>Description:</h6><br />
                 <p>
-                  This is a software application designed for the purpose of creating, storing, and managing notes.
-                  The application likely provides a user interface through which users can interact with the note-taking functionality.
-                </p> */}
+                  This is a software application designed for the purpose of storing a list of your favorite wine.
+                  The application asks the user for credentials so providing security for those who are not authorised those
+                  the list. It allows you to add new wines, edit existing ones and viewing existing ones and their images.
+                </p><br />
               </div>
-              <div className="ml-8">
-                {/* <h6>Stack:</h6>
-                <p>React</p>
-                <p>Postgres</p>
-                <p>Express</p>
-                <p>Cors</p>
-                <p>CSS</p>
-                <p>HTML</p> */}
+              <div>
+                <h6>Stack:</h6><br />
+                <ul>
+                  <li>NextJS</li>
+                  <li>TypeScript</li>
+                  <li>Postgres</li>
+                  <li>Express</li>
+                  <li>Cors</li>
+                  <li>Tailwind</li>
+                  <li>HTML</li>
+                </ul>
               </div>
             </div>
           </DialogDescription>
-          {/* <a href='https://github.com/Sibusiso07/Note-Keeper'><button>Github</button></a> */}
+          <DialogFooter>
+            <a href='https://github.com/Sibusiso07/My-Wine-App'><button>Github</button></a>
+          </DialogFooter>
         </DialogHeader>
       </DialogContent>
     </Dialog>
