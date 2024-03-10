@@ -10,7 +10,7 @@ import {
 
 export default function About() {
   return (
-    <div className="flex justify-center items-center h-96 text-white">
+    <div className="flex justify-center items-center h-80 text-white">
       <div className="w-4/5 mx-auto">
         <div className="flex h-1 space-x-0">
           <div className="flex-shrink-0 w-1/2 pr-4">
