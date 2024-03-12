@@ -47,7 +47,7 @@ const noteKeeperComponent = () => {
                   <Image
                     src={`/projects/note-keeper/${imageName}`}
                     width={300}
-                    height={300}
+                    height={200}
                     alt="Code"
                     className='justify-center items-center'
                   />
@@ -60,14 +60,14 @@ const noteKeeperComponent = () => {
           <DialogDescription>
             <div>
               <div>
-                <h6>Description:</h6>
+                <strong><h6>Description:</h6></strong>
                 <p><br />
                   This is a software application designed for the purpose of creating, storing, and managing notes.
                   The application likely provides a user interface through which users can interact with the note-taking functionality.
                 </p><br />
               </div>
               <div className="ml-8 p-20">
-                <h6>Stack:</h6><br />
+                <strong><h6>Stack:</h6></strong><br />
                 <ul>
                   <li>React</li>
                   <li>Postgres</li>

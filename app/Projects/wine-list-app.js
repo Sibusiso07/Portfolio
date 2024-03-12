@@ -27,9 +27,10 @@ const imageFiles = [
   "ViewWine.jpg",
 ];
 
+
 const wineListComponent = () => {
   return (
-    <Dialog className="w-3/4 h-3/4">
+    <Dialog className="w-full h-full">
       <DialogTrigger>
         <Image 
           src={`/projects/wine-list-app/wine.jpg`}
@@ -47,8 +48,8 @@ const wineListComponent = () => {
                 <CarouselItem key={index}>
                   <Image
                     src={`/projects/wine-list-app/${imageName}`}
-                    width={300}
-                    height={300}
+                    width={500}
+                    height={400}
                     alt="Code"
                   />
                 </CarouselItem>
@@ -60,7 +61,7 @@ const wineListComponent = () => {
           <DialogDescription>
             <div >
               <div>
-                <h6>Description:</h6><br />
+                <strong><h6>Description:</h6></strong><br />
                 <p>
                   This is a software application designed for the purpose of storing a list of your favorite wine.
                   The application asks the user for credentials so providing security for those who are not authorised those
@@ -68,7 +69,7 @@ const wineListComponent = () => {
                 </p><br />
               </div>
               <div>
-                <h6>Stack:</h6><br />
+                <strong><h6>Stack:</h6></strong><br />
                 <ul>
                   <li>NextJS</li>
                   <li>TypeScript</li>

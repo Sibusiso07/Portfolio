@@ -13,7 +13,7 @@ export default function About() {
     <div className="flex justify-center items-center h-80 text-white">
       <div className="w-4/5 mx-auto">
         <div className="flex h-1 space-x-0">
-          <div className="flex-shrink-0 w-1/2 pr-4">
+          <div className="flex-shrink-0 w-1/2 pl-20">
             <Image
               src="/image.jpg"
               width={300}
@@ -65,8 +65,7 @@ export default function About() {
                       IT Systems Support at Gold Reef City Casino & Theme Park.
                       Currently, he is thriving in his role as an IT Network
                       Administrator at TonTrac Analytics, where he has been
-                      contributing his expertise for the past 5 months and
-                      counting.
+                      contributing his expertise.
                     </p>
                     <br />
                     <p>

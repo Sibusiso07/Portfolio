@@ -4,6 +4,7 @@ import './globals.css'
 import About from './about'
 import Projects from './projects'
 import Contact from './contact'
+import Footer from './footer'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -25,7 +26,8 @@ export default function RootLayout({
           {children}
           <About />
           <Projects />
-          <Contact />  
+          <Contact />
+          <Footer />  
         </div>
       </body>
     </html>
