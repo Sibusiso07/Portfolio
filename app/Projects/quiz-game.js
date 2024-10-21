@@ -6,6 +6,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
+  DialogFooter,
 } from '@/components/ui/dialog';
 import {
   Carousel,
@@ -17,17 +18,17 @@ import {
 import Image from "next/image";
 
 const imageFiles = [
-  "Code1.png",
-  "Code2.png",
-  "App1.png",
-  "Code3.png",
-  "App2.png",
-  "App3.png",
+  "Welcome.png",
+  "Main.png",
+  "Code Setup.png",
+  "Setup.png",
+  "Quiz.png",
+  "Trivia.png",
 ];
 
 const quizComponent = () => {
   return (
-    <Dialog className="w-3/4 h-3/4">
+    <Dialog className="w-full h-full">
       <DialogTrigger>
         <Image 
           src={`/projects/quiz-game/Quiz-Game.jpg`}
@@ -43,12 +44,13 @@ const quizComponent = () => {
             <CarouselContent>
               {imageFiles.map((imageName, index) => (
                 <CarouselItem key={index}>
-                  {/* <Image
-                    src={`/projects/note-keeper/${imageName}`}
+                  <Image
+                    src={`/projects/quiz-game/${imageName}`}
                     width={300}
                     height={300}
-                    alt="Code"
-                  /> */}
+                    alt={`${imageName}`}
+                    className="justify-center items-center"
+                  />
                 </CarouselItem>
               ))}
             </CarouselContent>
@@ -56,27 +58,29 @@ const quizComponent = () => {
             <CarouselNext />
           </Carousel>
           <DialogDescription>
-            <div className='flex'>
-                <h6>Still Coming</h6>
+            <div>
               <div>
-                {/* <h6>Description:</h6>
+                <strong><h6>Description:</h6></strong><br />
                 <p>
-                  This is a software application designed for the purpose of creating, storing, and managing notes.
-                  The application likely provides a user interface through which users can interact with the note-taking functionality.
-                </p> */}
+                  This quiz game allows users to customize their quiz experience by selecting from a variety of categories,
+                  difficulty levels, and the number of questions. The game fetches questions from an API based on the selected 
+                  preferences and tracks the player's score throughout the game.
+                </p><br />
               </div>
-              <div className="ml-8">
-                {/* <h6>Stack:</h6>
+              <div className="ml-8 p-20">
+                <strong><h6>Stack:</h6></strong><br />
                 <p>React</p>
-                <p>Postgres</p>
-                <p>Express</p>
-                <p>Cors</p>
+                <p>API</p>
                 <p>CSS</p>
-                <p>HTML</p> */}
+                <p>HTML</p>
               </div>
             </div>
           </DialogDescription>
-          {/* <a href='https://github.com/Sibusiso07/Note-Keeper'><button>Github</button></a> */}
+          <DialogFooter className='bg-blue-500 text-black border-black font-bold py-2 px-4 rounded'>
+            <a href='https://github.com/Sibusiso07/Quiz-Game'>
+              <button>Github</button>
+            </a>    
+          </DialogFooter>
         </DialogHeader>
       </DialogContent>
     </Dialog>

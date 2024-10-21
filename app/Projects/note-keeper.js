@@ -28,7 +28,7 @@ const imageFiles = [
 
 const noteKeeperComponent = () => {
   return (
-    <Dialog className="h-screen my-16 mx-80">
+    <Dialog className="w-full h-full">
       <DialogTrigger>
         <Image 
           src={`/projects/note-keeper/Note-Keeper.png`}
@@ -37,10 +37,10 @@ const noteKeeperComponent = () => {
           alt='Note Keeper Image'
         />
       </DialogTrigger>
-      <DialogContent className='w-5/6'>
+      <DialogContent>
         <DialogHeader>
           <DialogTitle>Note Keeper</DialogTitle>
-          <Carousel className="items-center justify-center">
+          <Carousel className="w-full">
             <CarouselContent>
               {imageFiles.map((imageName, index) => (
                 <CarouselItem key={index}>
@@ -48,8 +48,8 @@ const noteKeeperComponent = () => {
                     src={`/projects/note-keeper/${imageName}`}
                     width={300}
                     height={200}
-                    alt="Code"
-                    className='justify-center items-center'
+                    alt={`${imageName}`}
+                    className="justify-center items-center"
                   />
                 </CarouselItem>
               ))}
@@ -84,7 +84,6 @@ const noteKeeperComponent = () => {
               <button>Github</button>
             </a>    
           </DialogFooter>
-          
         </DialogHeader>
       </DialogContent>
     </Dialog>
