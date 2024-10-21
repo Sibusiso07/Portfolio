@@ -63,9 +63,8 @@ export default function About() {
                       Support at The Ridge Casino, 6 months as an IT Field
                       Technician at Tradelink Retail Systems, and 10 months as an
                       IT Systems Support at Gold Reef City Casino & Theme Park.
-                      Currently, he is thriving in his role as an IT Network
-                      Administrator at TonTrac Analytics, where he has been
-                      contributing his expertise.
+                      And 10 months as an IT Network Administrator at TonTrac 
+                      Analytics, where he has been contributing his expertise.
                     </p>
                     <br />
                     <p>
@@ -91,6 +90,10 @@ export default function About() {
                 </DialogHeader>
               </DialogContent>
             </Dialog>
+            <div className="flex justify-center py-10 text-white">
+              <strong className="mx-4"><a href="https://github.com/Sibusiso07">GitHub</a></strong>
+              <strong className="mx-4"><a href="https://www.linkedin.com/in/surprise-simelane-94118a14a/">LinkedIn</a></strong>
+            </div>
           </div>
         </div>
       </div>
