@@ -4,6 +4,7 @@
 import NoteKeeperProject from "./Projects/note-keeper";
 import QuizProject from "./Projects/quiz-game";
 import WineListProject from "./Projects/wine-list-app";
+import FaceDectectionComponent from "./Projects/face-detection";
 
 const Projects = () => {
   return (
@@ -14,6 +15,7 @@ const Projects = () => {
           <NoteKeeperProject />
           <QuizProject />
           <WineListProject />
+          <FaceDectectionComponent />
         </div>
       </div>
     </div>
